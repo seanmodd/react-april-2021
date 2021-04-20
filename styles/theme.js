@@ -1,28 +1,21 @@
 import { extendTheme } from '@chakra-ui/react';
-// import { createBreakpoints } from '@chakra-ui/theme-tools';
-import { GoogleFonts } from 'next-google-fonts';
+import { createBreakpoints } from '@chakra-ui/theme-tools';
 
-const myFonts = (
-  <GoogleFonts href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
-);
-const fonts = {
-  mono: `"Menlo", monospace`,
-};
+const fonts = { mono: `'Menlo', monospace` };
 
-// const breakpoints = createBreakpoints({
-//   sm: '40em',
-//   md: '52em',
-//   lg: '64em',
-//   xl: '80em',
-// });
+const breakpoints = createBreakpoints({
+  sm: '40em',
+  md: '52em',
+  lg: '64em',
+  xl: '80em',
+});
 
 const theme = extendTheme({
   colors: {
     black: '#16161D',
   },
   fonts,
-  // breakpoints,
-  myFonts,
+  breakpoints,
   icons: {
     logo: {
       path: (
