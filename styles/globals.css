@@ -13,7 +13,7 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: Poppins;
+  /* font-family: Poppins; */
 }
 .container {
   min-height: 100vh;
@@ -66,7 +66,7 @@ a {
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  
 }
 
 .title,
@@ -76,14 +76,14 @@ a {
 
 .description {
   line-height: 1.5;
-  font-size: 1.5rem;
+  
 }
 
 .code {
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
-  font-size: 1.1rem;
+  
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -123,7 +123,7 @@ a {
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  
   line-height: 1.5;
 }
 
@@ -312,7 +312,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: rgb(2, 2, 2);
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -336,7 +336,7 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
+  color: rgb(0, 0, 0);
   border-color: #888;
   outline: 0; }
 .button.button-primary,
@@ -555,3 +555,64 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+
+
+.expense-item__price {
+  
+  font-weight: bold;
+  color: white;
+  background-color: #40005d;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.expense-date {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #ececec;
+  background-color: #000000;
+  color: white;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.expense-date__month {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.expense-date__year {
+  font-size: 0.75rem;
+}
+
+.expense-date__day {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.expenses {
+  padding: 1rem;
+  background-color: rgb(0, 0, 0);
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+}
+.card {
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}

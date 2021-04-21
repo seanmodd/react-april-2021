@@ -8,15 +8,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.11",
     "@chakra-ui/react": "^1.4.2",
+    "@chakra-ui/transition": "^1.1.1",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
+    "@rebass/preset": "^4.0.5",
     "axios": "^0.21.1",
     "framer-motion": "^4.1.2",
     "next": "^10.1.2",
     "next-google-fonts": "^2.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "rebass": "^4.0.7",
     "styled-components": "^5.2.3"
   },
   "devDependencies": {
