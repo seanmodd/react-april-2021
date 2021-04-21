@@ -13,7 +13,7 @@ export default function App() {
     <VStack spacing="30px" w="100%" mt="50">
       <Container>
         <Heading>Here</Heading>
-        <Button bg={color[colorMode]}>Button Test</Button>
+        <Button>Button Test</Button>
         <Button>Button Test</Button>
       </Container>
     </VStack>
