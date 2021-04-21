@@ -14,8 +14,8 @@ const Container = ({ children }) => {
   // };
 
   const color = {
-    light: 'gray.100',
-    dark: 'gray.900',
+    light: 'gray.900',
+    dark: 'blue.100',
   };
 
   // const navHoverBg = {
