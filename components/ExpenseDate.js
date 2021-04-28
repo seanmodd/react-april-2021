@@ -1,22 +1,37 @@
 import { Button } from '@chakra-ui/button';
-import { Flex, Heading, HStack, VStack } from '@chakra-ui/layout';
+import {
+  Flex,
+  useColorMode,
+  Heading,
+  HStack,
+  VStack,
+  Box,
+} from '@chakra-ui/react';
+import { useColorModeValue as mode } from '@chakra-ui/color-mode';
 import React from 'react';
 
 const ExpenseDate = (props) => {
   const month = '';
   const day = '';
   const year = '';
-
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Button p="10" bg="black" _hover={{ bg: 'red.500' }}>
+    <Box
+      borderWidth="5px"
+      boxShadow="xl"
+      borderRadius="2xl"
+      bg={mode[colorMode]}
+      p="5"
+      _hover={{ bg: 'red.100' }}
+    >
       <HStack>
-        <Heading color="white">The date goes here</Heading>
+        <Heading>The date goes here</Heading>
         <Flex className="expense-date__month">{month}</Flex>
 
         <Flex className="expense-date__year">{year}</Flex>
         <Flex className="expense-date__day">{day}</Flex>
       </HStack>
-    </Button>
+    </Box>
   );
 };
 

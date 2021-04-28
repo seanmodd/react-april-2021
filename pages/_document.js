@@ -5,8 +5,6 @@ import {
   VisuallyHidden,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-import Container from '../components/Container';
-import DarkModeSwitch from '../components/DarkModeSwitch';
 
 export default class Document extends NextDocument {
   render() {

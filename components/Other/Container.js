@@ -36,12 +36,7 @@ const Container = ({ children }) => {
         >
           <DarkModeSwitch />
         </HStack>
-        <VStack
-          w="100vw"
-          h="100%"
-          color={color[colorMode]}
-          bg={bgColor[colorMode]}
-        >
+        <VStack color={color[colorMode]} bg={bgColor[colorMode]}>
           {children}
         </VStack>
       </VStack>
